@@ -33,7 +33,7 @@ jobs:
           cache: npm
 
       - name: Install
-        run: npm ci
+        run: npm install
 
       # ---- 关键：静态导出不兼容 middleware 时，CI 临时禁用 ----
       - name: Disable middleware for static export (CI only)
