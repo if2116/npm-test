@@ -33,9 +33,9 @@ jobs:
           cache: npm
 
       - name: Install
-        run: npm install
+        run: npm ci
 
-      # ---- 关键：静态导出不兼容 middleware 时，CI 临时禁用 ----
+      # CI-only：静态导出常与 middleware 不兼容（next-intl 常见）
       - name: Disable middleware for static export (CI only)
         run: |
           if [ -f middleware.ts ]; then mv middleware.ts middleware.ts.disabled; fi
@@ -49,7 +49,6 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           npm run build
-          echo "---- out dir ----"
           ls -la out
           test -f out/index.html
           touch out/.nojekyll
