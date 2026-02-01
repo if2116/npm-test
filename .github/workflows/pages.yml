@@ -39,7 +39,6 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           npm run build
-          # 避免 Pages/Jekyll 规则影响静态资源（保险起见）
           touch out/.nojekyll
 
       - name: Upload artifact
