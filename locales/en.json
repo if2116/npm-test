@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "Home",
+    "arena": "Arena",
+    "framework": "Framework",
+    "faq": "FAQ",
+    "contact": "Community"
+  },
+  "hero": {
+    "title": "The Arena for Enterprise AI",
+    "subtitle": "Vendor-agnostic blueprints for real-world AI implementation",
+    "cta_companies": "For Companies",
+    "cta_builders": "For Builders"
+  },
+  "valueProps": {
+    "open_standard": {
+      "title": "Open Standard",
+      "description": "Break vendor lock-in with open-source blueprints"
+    },
+    "verified_sota": {
+      "title": "Verified SOTA",
+      "description": "Real-world benchmarked solutions, not just academic papers"
+    },
+    "enterprise_ready": {
+      "title": "Enterprise Ready",
+      "description": "Production-grade implementations with proven ROI"
+    }
+  },
+  "arena": {
+    "title": "AI Best Practices Arena",
+    "subtitle": "Discover and compare verified AI implementations",
+    "filters": {
+      "all_industries": "All Industries",
+      "all_categories": "All Categories"
+    },
+    "table": {
+      "arena_name": "Arena Name",
+      "status": "Status",
+      "quality": "Quality",
+      "efficiency": "Efficiency",
+      "cost": "Cost",
+      "trust": "Trust",
+      "usage": "Usage",
+      "action": "Action",
+      "view_blueprint": "View Blueprint",
+      "test_it": "Test it"
+    },
+    "status": {
+      "verified": "Verified",
+      "in_arena": "In Arena"
+    }
+  },
+  "blueprint": {
+    "back_to_arena": "← Back to Arena",
+    "view_github": "View on GitHub",
+    "contact_expert": "Contact Expert for Deployment",
+    "interactive_demo": "Interactive Demo",
+    "business_case": "Business Case",
+    "gap_analysis": {
+      "title": "Gap Analysis",
+      "standard": "Standard Version (Free)",
+      "expert": "Enterprise Expert Version",
+      "features": {
+        "accuracy": "Accuracy",
+        "deployment": "Deployment",
+        "support": "Support",
+        "customization": "Customization",
+        "sla": "SLA Guarantee"
+      }
+    },
+    "technical_details": "Technical Details"
+  },
+  "framework": {
+    "title": "Technical Framework",
+    "subtitle": "Understanding RWAI's approach to AI implementation"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions"
+  },
+  "footer": {
+    "tagline": "The Arena for Enterprise AI Best Practices",
+    "links": {
+      "about": "About",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "copyright": "© 2025 RWAI. Open source under MIT license."
+  }
+}

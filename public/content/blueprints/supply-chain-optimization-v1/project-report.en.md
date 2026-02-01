@@ -1,0 +1,17 @@
+# Project Report
+
+**Blueprint ID**: supply-chain-optimization-v1
+
+---
+
+## 🚧 Coming Soon
+
+Detailed documentation is being prepared. This section will include comprehensive information about project report.
+
+---
+
+**In the meantime**, please refer to the [Overview](./index.en.md) for quick information.
+
+---
+
+*Expected completion: Q2 2025*
