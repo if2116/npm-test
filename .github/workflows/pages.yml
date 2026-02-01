@@ -23,6 +23,8 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -33,12 +35,21 @@ jobs:
       - name: Install
         run: npm ci
 
+      # ---- 关键：静态导出不兼容 middleware 时，CI 临时禁用 ----
+      - name: Disable middleware for static export (CI only)
+        run: |
+          if [ -f middleware.ts ]; then mv middleware.ts middleware.ts.disabled; fi
+          if [ -f middleware.js ]; then mv middleware.js middleware.js.disabled; fi
+          if [ -f src/middleware.ts ]; then mv src/middleware.ts src/middleware.ts.disabled; fi
+          if [ -f src/middleware.js ]; then mv src/middleware.js src/middleware.js.disabled; fi
+
       - name: Build (Next.js static export)
         env:
           NODE_ENV: production
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           npm run build
+          echo "---- out dir ----"
           ls -la out
           test -f out/index.html
           touch out/.nojekyll
